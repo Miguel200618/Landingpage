@@ -1,5 +1,5 @@
 import React from 'react';
-import { Instagram, Mail } from 'lucide-react';
+import { Instagram, Mail, Linkedin } from 'lucide-react';
 import Button from './Button';
 
 const Footer: React.FC = () => {
@@ -24,6 +24,14 @@ const Footer: React.FC = () => {
                 className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-accent-neutral hover:text-accent-highlight hover:bg-white/10 transition-all"
               >
                 <Instagram size={18} />
+              </a>
+              <a 
+                href="https://www.linkedin.com/in/miguel-de-la-cruz-davila-8a528b306" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-accent-neutral hover:text-accent-highlight hover:bg-white/10 transition-all"
+              >
+                <Linkedin size={18} />
               </a>
             </div>
           </div>
@@ -72,4 +80,4 @@ const Footer: React.FC = () => {
   );
 };
 
-export default Footer;
+export default Footer

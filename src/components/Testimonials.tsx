@@ -17,7 +17,7 @@ const Testimonials: React.FC = () => {
           <div className="w-full md:w-1/2 p-4">
             <div className="video-container">
               <iframe
-                src="https://www.youtube.com/embed/wVuZ8flZ1z4"
+                src="https://www.youtube.com/embed/sSmJ1SIdJ84"
                 title="DLC Automation Demo"
                 className="absolute inset-0 w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -58,4 +58,4 @@ const Testimonials: React.FC = () => {
   );
 };
 
-export default Testimonials;
+export default Testimonials
