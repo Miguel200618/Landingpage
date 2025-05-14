@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-primary text-white font-sans;
+  }
+}
+
+@layer components {
+  .container {
+    @apply px-4 mx-auto max-w-7xl;
+  }
+  
+  .section {
+    @apply py-16 md:py-24;
+  }
+  
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+  
+  .btn-primary {
+    @apply bg-accent-highlight text-primary hover:brightness-110 focus:ring-accent-highlight;
+  }
+  
+  .btn-secondary {
+    @apply bg-transparent border border-accent-neutral text-white hover:bg-accent-neutral/10 focus:ring-accent-neutral;
+  }
+  
+  .heading-xl {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold leading-tight;
+  }
+  
+  .heading-lg {
+    @apply text-3xl md:text-4xl font-bold;
+  }
+  
+  .heading-md {
+    @apply text-2xl md:text-3xl font-bold;
+  }
+  
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-xl;
+  }
+
+  /* Enhanced video container styles */
+  .video-container {
+    @apply relative aspect-video rounded-lg overflow-hidden shadow-glow transition-all duration-300;
+    &:hover {
+      @apply shadow-glow-lg;
+    }
+  }
+
+  /* Enhanced button hover effects */
+  button, .btn {
+    @apply transform transition-all duration-300;
+    &:hover {
+      @apply scale-105;
+    }
+    &:active {
+      @apply scale-95;
+    }
+  }
+}
+
+.hero-pattern {
+  background-image: 
+    radial-gradient(circle at 20% 35%, #7B8C3B08 0, transparent 50%),
+    radial-gradient(circle at 80% 10%, #B1BF4908 0, transparent 50%);
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.gradient-mask {
+  mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+}
+
+/* Glassmorphism styles */
+.glassmorphism {
+  background: rgba(13, 13, 13, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(140, 136, 138, 0.18);
+}
+
+/* Spline viewer styles */
+.spline-container {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: transparent;
+  border-radius: 1rem;
+}
+
+spline-viewer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: contain;
+  transform-origin: center center;
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  touch-action: pan-x pan-y;
+}
+
+.spline-watermark {
+  display: none !important;
+}
+
+/* Shadow variations */
+.shadow-glow {
+  box-shadow: 0 0 15px rgba(177, 191, 73, 0.3);
+}
+
+.shadow-glow-lg {
+  box-shadow: 0 0 25px rgba(177, 191, 73, 0.4);
+}
+
+.shadow-glow-sm {
+  box-shadow: 0 0 8px rgba(177, 191, 73, 0.2);
+}
+
+/* Responsive breakpoints */
+@media (min-width: 1280px) {
+  .spline-container {
+    height: 700px;
+  }
+  
+  spline-viewer {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 1279px) and (min-width: 769px) {
+  .spline-container {
+    height: 600px;
+  }
+  
+  spline-viewer {
+    transform: scale(0.95);
+  }
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+  .spline-container {
+    height: 500px;
+  }
+  
+  spline-viewer {
+    transform: scale(0.9);
+  }
+}
