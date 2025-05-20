@@ -1,6 +1,6 @@
 import React from 'react';
 import FeatureCard from './FeatureCard';
-import { MessageSquare, Phone } from 'lucide-react';
+import { MessageSquare, Phone, Globe } from 'lucide-react';
 
 const Features: React.FC = () => {
   const features = [
@@ -13,6 +13,11 @@ const Features: React.FC = () => {
       icon: Phone,
       title: 'AI Automated Phone Callers',
       description: 'Smart outbound calling system that handles appointment confirmations, follow-ups, and lead qualification with natural voice interactions.',
+    },
+    {
+      icon: Globe,
+      title: 'Website Creation & Development',
+      description: 'We design high-converting websites tailored to your brand — optimized for performance, clarity, and results. Built with speed and responsiveness in mind, your site becomes your 24/7 digital storefront.',
     }
   ];
 
@@ -26,7 +31,7 @@ const Features: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {features.map((feature, index) => (
             <FeatureCard
               key={index}

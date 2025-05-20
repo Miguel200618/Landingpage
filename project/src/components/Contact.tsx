@@ -1,8 +1,12 @@
 import React from 'react';
-import ContactForm from './ContactForm';
+import Button from './Button';
 import { Zap, Mail, Phone, Clock } from 'lucide-react';
 
 const Contact: React.FC = () => {
+  const handleScheduleCall = () => {
+    window.open('https://calendly.com/migueldelacruz/ai-booking-demo', '_blank');
+  };
+
   return (
     <section id="contact" className="section bg-primary-dark">
       <div className="container">
@@ -56,8 +60,19 @@ const Contact: React.FC = () => {
             </div>
           </div>
           
-          <div>
-            <ContactForm />
+          <div className="glass-card p-8 flex flex-col items-center justify-center text-center">
+            <h3 className="text-2xl font-bold mb-6">Ready to Get Started?</h3>
+            <p className="text-accent-neutral mb-8">
+              Schedule your free consultation call and let's discuss how we can automate your business processes.
+            </p>
+            <Button
+              variant="primary"
+              size="lg"
+              onClick={handleScheduleCall}
+              className="w-full md:w-auto"
+            >
+              Schedule My Call
+            </Button>
           </div>
         </div>
       </div>
