@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
               variant="primary" 
               size="lg" 
               className="group"
-              onClick={() => window.open('https://calendly.com/angeliyoft/ai-booking-demo', '_blank')}
+              onClick={() => window.open('https://calendly.com/migueldelacruz/ai-booking-demo?month=2025-05', '_blank')}
             >
               Book Your Free AI Demo
               <ArrowRight className="ml-2 transition-transform group-hover:translate-x-1" size={20} />

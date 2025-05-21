@@ -4,7 +4,7 @@ import { Zap, Mail, Phone, Clock } from 'lucide-react';
 
 const Contact: React.FC = () => {
   const handleScheduleCall = () => {
-    window.open('https://calendly.com/migueldelacruz/ai-booking-demo', '_blank');
+    window.open('https://calendly.com/migueldelacruz/ai-booking-demo?month=2025-05', '_blank');
   };
 
   return (

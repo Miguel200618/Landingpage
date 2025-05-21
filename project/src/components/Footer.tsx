@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer className="bg-primary-dark border-t border-white/5 pt-16 pb-8">
+    <footer className="bg-primary-light/80 border-t border-white/10 pt-16 pb-8">
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           <div className="md:col-span-2">
@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
                 href="https://www.instagram.com/miguel.ai.automation?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-accent-neutral hover:text-accent-highlight hover:bg-white/10 transition-all"
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-accent-neutral hover:text-accent-highlight hover:bg-white/20 transition-all"
               >
                 <Instagram size={18} />
               </a>
@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
                 href="https://www.linkedin.com/in/miguel-de-la-cruz-davila-8a528b306" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-accent-neutral hover:text-accent-highlight hover:bg-white/10 transition-all"
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-accent-neutral hover:text-accent-highlight hover:bg-white/20 transition-all"
               >
                 <Linkedin size={18} />
               </a>
@@ -58,7 +58,7 @@ const Footer: React.FC = () => {
             <Button 
               variant="primary"
               size="md"
-              onClick={() => window.open('https://calendly.com/angeliyoft/ai-booking-demo', '_blank')}
+              onClick={() => window.open('https://calendly.com/migueldelacruz/ai-booking-demo?month=2025-05', '_blank')}
               className="w-full bg-accent-green/20 hover:bg-accent-green/30 text-accent-highlight border border-accent-highlight/20 hover:border-accent-highlight/40 transition-all duration-300"
             >
               Schedule a Call
@@ -66,7 +66,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
         
-        <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-accent-neutral text-sm mb-4 md:mb-0">
             &copy; {currentYear} DLC Automation Systems. All rights reserved.
           </p>

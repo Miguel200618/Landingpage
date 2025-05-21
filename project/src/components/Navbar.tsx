@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
   }, []);
 
   const handleBookDemo = () => {
-    window.open('https://calendly.com/angeliyoft/ai-booking-demo', '_blank');
+    window.open('https://calendly.com/migueldelacruz/ai-booking-demo?month=2025-05', '_blank');
   };
 
   const toggleMenu = () => {

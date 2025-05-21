@@ -23,7 +23,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
   isPopular = false,
 }) => {
   const handleGetStarted = () => {
-    window.open('https://calendly.com/angeliyoft/ai-booking-demo', '_blank');
+    window.open('https://calendly.com/migueldelacruz/ai-booking-demo?month=2025-05', '_blank');
   };
 
   return (
@@ -40,7 +40,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
       <h3 className="text-2xl font-bold mb-2">{name}</h3>
       <div className="mb-4">
         <span className="text-3xl font-bold">{price}</span>
-        <span className="text-accent-neutral">/month</span>
+        {name !== 'One-Time Project' && <span className="text-accent-neutral">/month</span>}
       </div>
       <p className="text-accent-neutral mb-6">{description}</p>
       <ul className="space-y-3 mb-8">
